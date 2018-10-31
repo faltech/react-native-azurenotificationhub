@@ -31,6 +31,12 @@ dependencies {
     compile 'com.microsoft.azure:azure-notifications-handler:1.0.1@aar'
 }
 
+configurations.all {
+    resolutionStrategy {
+        force "com.android.support:appcompat-v7:26.1.0"
+    }
+}
+
 repositories {
     maven {
         url "http://dl.bintray.com/microsoftazuremobile/SDK"
